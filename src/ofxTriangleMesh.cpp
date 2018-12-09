@@ -192,7 +192,7 @@ ofPoint ofxTriangleMesh::getTriangleCenter(ofPoint *tr){
     return ofPoint(c_x, c_y);
 }
 
-bool ofxTriangleMesh::isPointInsidePolygon(ofPoint *polygon,int N, ofPoint p)
+bool ofxTriangleMesh::isPointInsidePolygon(glm::vec3 *polygon,int N, ofPoint p)
 {
     int counter = 0;
     int i;
